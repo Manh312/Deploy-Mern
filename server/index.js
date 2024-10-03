@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: ['https://deploy-mern-login-registration.vercel.app'], 
+  origin: ['https://tdeploy-mern-api-beta.vercel.app'], 
   methods: ['GET', 'POST'],
   credentials: true 
 }));
