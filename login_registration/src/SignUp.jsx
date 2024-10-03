@@ -10,7 +10,7 @@ const SignUp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('https://tdeploy-mern-api-beta.vercel.app/register', {name, email, password})
+    axios.post('https://deploy-mern-api-beta.vercel.app/register', {name, email, password})
     .then(result => {console.log(result)
       navigate('/login');
     })
