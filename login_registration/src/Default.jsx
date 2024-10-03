@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Default = () => {
   axios.defaults.withCredentials = true;
@@ -11,7 +12,9 @@ const Default = () => {
   }, []);
   return (
     <div>
-      <h1 className='text-center'>ABC</h1>
+      <Link to='/login'>
+        <h1 className='text-center'>To Login</h1>
+      </Link>
     </div>
   );
 }
