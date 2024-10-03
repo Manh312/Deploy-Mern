@@ -5,7 +5,7 @@ const Home = () => {
   axios.defaults.withCredentials = true;
 
   useEffect(() => {
-    axios.get('deploy-mern-api-jade.vercel.app//home')
+    axios.get('https://deploy-mern-api-jade.vercel.app/home')
     .then(result => console.log(result))
     .catch(err => console.log(err));
   }, []);
