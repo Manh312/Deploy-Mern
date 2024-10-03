@@ -21,11 +21,11 @@
     },
     {
       "src": "/",
-      "dest": "/empty"  // Giả sử bạn có một route cho trang trắng
+      "dest": "/empty"  
     },
     {
       "src": "/(.*)",
-      "dest": "/404"  // Chuyển đến trang 404 cho tất cả các route không hợp lệ
+      "dest": "/404"  
     }
   ]
 }
