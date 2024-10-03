@@ -8,8 +8,24 @@
   ],
   "routes": [
     {
+      "src": "/home",
+      "dest": "/home"
+    },
+    {
+      "src": "/login",
+      "dest": "/login"
+    },
+    {
+      "src": "/register",
+      "dest": "/register"
+    },
+    {
+      "src": "/",
+      "dest": "/empty"  // Giả sử bạn có một route cho trang trắng
+    },
+    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/404"  // Chuyển đến trang 404 cho tất cả các route không hợp lệ
     }
   ]
 }
