@@ -18,14 +18,6 @@
     {
       "src": "/register",
       "dest": "/register"
-    },
-    {
-      "src": "/",
-      "dest": "/empty"  
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/404"  
     }
   ]
 }
