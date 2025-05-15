@@ -6,7 +6,7 @@ const Default = () => {
   axios.defaults.withCredentials = true;
 
   useEffect(() => {
-    axios.get('https://deploy-mern-api-beta.vercel.app')
+    axios.get('https://deploy-mern-api-manh312s-projects.vercel.app')
     .then(result => console.log(result))
     .catch(err => console.log(err));
   }, []);
