@@ -29,6 +29,12 @@ const verifyUser = (req, res, next) => {
   }
 };
 
+
+app.get('/', (req, res) => {
+  return res.json('Hello');
+})
+
+
 app.get('/home', verifyUser, (req, res) => {
   return res.json('Success');
 })
