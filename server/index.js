@@ -9,13 +9,13 @@ const cookieParser = require('cookie-parser');
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: ['http://deploy-mern-api.vercel.app'], 
+  origin: ['https://deploy-mern-frontend-jet-six.vercel.app'], 
   methods: ['GET', 'POST'],
   credentials: true 
 }));
 app.use(cookieParser());
 
-mongoose.connect('mongodb+srv://manhpqhe160909:11092002@cluster0.ijvx0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect('mongodb+srv://mern-vercel:manh11092002@cluster0.qa1t2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
 const verifyUser = (req, res, next) => {
   const token = req.cookies.token;
@@ -28,10 +28,6 @@ const verifyUser = (req, res, next) => {
     })
   }
 };
-
-app.get('/', (req, res) => {
-  res.json({ message: "Hello from Express on Vercel!" });
-});
 
 app.get('/home', verifyUser, (req, res) => {
   return res.json('Success');

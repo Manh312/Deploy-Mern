@@ -10,7 +10,7 @@ const Login = () => {
   axios.defaults.withCredentials = true;
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:3000/login', { email, password})
+    axios.post('https://deploy-mern-api-beta.vercel.app/login', { email, password})
     .then(result => {
       console.log(result);
       if (result.data === 'Success') {
