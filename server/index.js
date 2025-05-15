@@ -15,7 +15,9 @@ app.use(cors({
 }));
 app.use(cookieParser());
 
-mongoose.connect('mongodb+srv://mern-vercel:manh11092002@cluster0.qa1t2.mongodb.net/?retryWrites=true&w=majority');
+
+//mongodb+srv://hiepthhe161790:*********@cluster0.iqtdu.mongodb.net/QUIZ-SPARK?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://mern-vercel:manh11092002@cluster0.qa1t2.mongodb.net/mern_vercel?retryWrites=true&w=majority');
 
 const verifyUser = (req, res, next) => {
   const token = req.cookies.token;
