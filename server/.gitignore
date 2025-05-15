@@ -1,0 +1,6 @@
+# dependencies
+/node_modules
+/serviceAccountKey.json
+/coverage
+# Env files
+*.env
